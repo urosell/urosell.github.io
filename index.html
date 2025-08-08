@@ -132,15 +132,18 @@
   function toggleServicios() {
     const section = document.getElementById("servicios");
     section.classList.toggle("hidden");
-    if (!section.classList.contains("hidden")) {
+    
+      if (!section.classList.contains("hidden")) {
       const yOffset = -100; // espai per evitar que el header tapi el títol
       const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
       window.scrollTo({ top: y, behavior: "smooth" });
   }
+  }
 </script>
 </body>
 </html>
+
 
 
 
